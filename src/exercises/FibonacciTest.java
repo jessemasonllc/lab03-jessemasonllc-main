@@ -48,7 +48,7 @@ public class FibonacciTest {
     }
 
     public static long ifib(int n) {
-        //TODO : COMPLETE BODY OF ITERATIVE METHOD
+
         int temp0 = 0;
         int temp1 = 1;
         int temp2 = 1;
@@ -82,14 +82,26 @@ public class FibonacciTest {
     public static void testIterative(){}
 
     public static void main(String[] args) {
-int testNum = 40;
+
+int testNum = 8;
 System.out.println(fib(testNum));
-System.out.println(System.nanoTime());
 System.out.println("Basic alg times called: " + getTimesCalled());
 System.out.println(mfib(testNum));
-System.out.println(System.nanoTime());
 System.out.println("Memoized alg times called: " + getTimesCalled2());
 System.out.println(ifib(testNum));
-System.out.println(System.nanoTime());
+
+        testNum = 21;
+        System.out.println(fib(testNum));
+        System.out.println("Basic alg times called: " + getTimesCalled());
+        System.out.println(mfib(testNum));
+        System.out.println("Memoized alg times called: " + getTimesCalled2());
+        System.out.println(ifib(testNum));
+
+        testNum = 42;
+        System.out.println(fib(testNum));
+        System.out.println("Basic alg times called: " + getTimesCalled());
+        System.out.println(mfib(testNum));
+        System.out.println("Memoized alg times called: " + getTimesCalled2());
+        System.out.println(ifib(testNum));
     }
 }

@@ -76,6 +76,14 @@ public class IModule {
         }
     }
 
+    public static int linearSearch(int[] list, int x) {
+        for (int i = 0; i < list.length; i++) {
+            if (list[i] == x)
+                return i;
+        }
+        return -1;
+    }
+
     private static void merge(int[] list, int[] left, int[] right) {
 
         int l = left.length;
@@ -188,14 +196,17 @@ public class IModule {
     public static void main(String[] args) {
     int[] data1 = {1, 3, 5, 7, 8, 9};
     int[] data2 = {2, 9, 5, 4, 8, 1, 6};
-    System.out.println(Arrays.toString(data1));
+    int[] data3 = {2, 3, 1, 5, 8, 6};
     System.out.println(Arrays.toString(data2));
-
+    quickSort(data2);
+    System.out.println(Arrays.toString(data2));
+//    System.out.println(Arrays.toString(data2));
+/*
         System.out.println(binarySearch(data1, 2));
         System.out.println(binarySearch(data1, 5));
-        System.out.println(binarySearch(data1, 9));
+        System.out.println(binarySearch(data1, 9)); */
 
-    quickSort(data2);
-    System.out.println("Data 2 sorted: " + Arrays.toString(data2));
+//    quickSort(data2);
+//    System.out.println("Data 2 sorted: " + Arrays.toString(data2));
     }
 }

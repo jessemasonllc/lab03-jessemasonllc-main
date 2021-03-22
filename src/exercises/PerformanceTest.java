@@ -109,6 +109,7 @@ public class PerformanceTest {
         int[] data9  = dataSet(250000);
         int[] data10 = dataSet(500000);
 
+        /*
         System.out.println();
         System.out.println("Range 1 - Run Time Analysis");
         timeAlgoRange01(data1);
@@ -120,57 +121,57 @@ public class PerformanceTest {
         timeAlgoRange01(data7);
         timeAlgoRange01(data8);
         timeAlgoRange01(data9);
-        timeAlgoRange01(data10);
+        timeAlgoRange01(data10); */
 
-//		System.out.println();
-//		System.out.println("Range 2 - Run Time Analysis");
-//		timeAlgoRange02(data1);
-//		timeAlgoRange02(data2);
-//		timeAlgoRange02(data3);
-//		timeAlgoRange02(data4);
-//		timeAlgoRange02(data5);
-//		timeAlgoRange02(data6);
-//		timeAlgoRange02(data7);
-//		timeAlgoRange02(data8);
-//		timeAlgoRange02(data9);
-//		timeAlgoRange02(data10);
+		System.out.println();
+		System.out.println("Range 2 - Run Time Analysis");
+		timeAlgoRange02(data1);
+		timeAlgoRange02(data2);
+		timeAlgoRange02(data3);
+		timeAlgoRange02(data4);
+		timeAlgoRange02(data5);
+		timeAlgoRange02(data6);
+		timeAlgoRange02(data7);
+		timeAlgoRange02(data8);
+		timeAlgoRange02(data9);
+		timeAlgoRange02(data10);
+
+        System.out.println();
+        System.out.println("Data Set - 9 to 18 for Range 3");
 //
-//        System.out.println();
-//        System.out.println("Data Set - 9 to 18 for Range 3");
-//
-//        int[] data11 = dataSet(10000000);
-//        int[] data12 = dataSet(20000000);
-//        int[] data13 = dataSet(40000000);
-//        int[] data14 = dataSet(60000000);
-//        int[] data15 = dataSet(80000000);
-//        int[] data16 = dataSet(100000000);
-//        int[] data17 = dataSet(125000000);
-//        int[] data18 = dataSet(150000000);
-//        int[] data19 = dataSet(200000000);
-//        int[] data20 = dataSet(250000000);
-//
-//        System.out.println();
-//        System.out.println("Range 3 - Run Time Analysis");
-//        timeAlgoRange03(data1);
-//        timeAlgoRange03(data2);
-//        timeAlgoRange03(data3);
-//        timeAlgoRange03(data4);
-//        timeAlgoRange03(data5);
-//        timeAlgoRange03(data6);
-//        timeAlgoRange03(data7);
-//        timeAlgoRange03(data8);
-//        timeAlgoRange03(data9);
-//        timeAlgoRange03(data10);
-//        timeAlgoRange03(data11);
-//        timeAlgoRange03(data12);
-//        timeAlgoRange03(data13);
-//        timeAlgoRange03(data14);
-//        timeAlgoRange03(data15);
-//        timeAlgoRange03(data16);
-//        timeAlgoRange03(data17);
-//        timeAlgoRange03(data18);
-//        timeAlgoRange03(data19);
-//        timeAlgoRange03(data20);
+        int[] data11 = dataSet(10000000);
+        int[] data12 = dataSet(20000000);
+        int[] data13 = dataSet(40000000);
+        int[] data14 = dataSet(60000000);
+        int[] data15 = dataSet(80000000);
+        int[] data16 = dataSet(100000000);
+        int[] data17 = dataSet(125000000);
+        int[] data18 = dataSet(150000000);
+        int[] data19 = dataSet(200000000);
+        int[] data20 = dataSet(250000000);
+
+        System.out.println();
+        System.out.println("Range 3 - Run Time Analysis");
+        timeAlgoRange03(data1);
+        timeAlgoRange03(data2);
+        timeAlgoRange03(data3);
+        timeAlgoRange03(data4);
+        timeAlgoRange03(data5);
+        timeAlgoRange03(data6);
+        timeAlgoRange03(data7);
+        timeAlgoRange03(data8);
+        timeAlgoRange03(data9);
+        timeAlgoRange03(data10);
+        timeAlgoRange03(data11);
+        timeAlgoRange03(data12);
+        timeAlgoRange03(data13);
+        timeAlgoRange03(data14);
+        timeAlgoRange03(data15);
+        timeAlgoRange03(data16);
+        timeAlgoRange03(data17);
+        timeAlgoRange03(data18);
+        timeAlgoRange03(data19);
+        timeAlgoRange03(data20);
 
     }
 }
