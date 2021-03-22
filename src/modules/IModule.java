@@ -61,13 +61,16 @@ public class IModule {
 
     public static void insertionSort(int[] list) {
         int j;
-        int temp;
+        // int temp;
         for (int i = 1; i < list.length; i++) {
             j = i;
             while (j > 0 && list[j] < list[j-1]) {
+
+                swap(list, j, j-1);
+                /*
                 temp = list[j];
                 list[j] = list[j-1];
-                list[j-1] = temp;
+                list[j-1] = temp; */
                 j--;
             }
         }
@@ -123,22 +126,15 @@ public class IModule {
     private static int partition(int[] list, int low, int high) {
         int p = list[high];
         int i = low-1;
-        int temp;
 
         for (int j = low; j <= high-1; j++) {
             if (list[j] < p)
             {
                 i++;
-                temp = list[i];
-                list[i] = list[j];
-                list[j] = temp;
+            swap(list, i, j);
             }
         }
-
-        temp = list[i + 1];
-        list[i] = list[high];
-        list[high] = temp;
-
+        swap(list, i + 1, high);
         return (i + 1);
     }
 
@@ -199,7 +195,7 @@ public class IModule {
         System.out.println(binarySearch(data1, 5));
         System.out.println(binarySearch(data1, 9));
 
-    mergeSort(data2);
+    quickSort(data2);
     System.out.println("Data 2 sorted: " + Arrays.toString(data2));
     }
 }
